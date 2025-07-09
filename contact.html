@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact EpicSpicyEats — Get in Touch!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA; /* Creamy White */
+            color: #212121; /* Charcoal Black */
+        }
+        .text-fiery-red { color: #D32F2F; }
+        .bg-fiery-red { background-color: #D32F2F; }
+        .text-charcoal-black { color: #212121; }
+        .bg-charcoal-black { background-color: #212121; }
+        .text-flame-orange { color: #FF5722; }
+        .bg-flame-orange { background-color: #FF5722; }
+        .text-smoke-gray { color: #757575; }
+        .bg-smoke-gray { background-color: #757575; }
+        .bg-creamy-white { background-color: #FAFAFA; }
+    </style>
+</head>
+<body class="leading-relaxed">
+    <!-- Header -->
+    <header class="bg-charcoal-black text-creamy-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-3xl font-bold text-fiery-red mb-4 md:mb-0">
+                EpicSpicyEats
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-white">
+                    <li><a href="index.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="blog.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Blog</a></li>
+                    <li><a href="privacy.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-5xl font-extrabold text-charcoal-black text-center mb-12">
+            Contact EpicSpicyEats: We'd Love to Hear From You!
+        </h1>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">Connect with the EpicSpicyEats Team</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                At EpicSpicyEats, we are passionate about building a vibrant community of spice lovers, and your feedback, questions, and ideas are incredibly valuable to us. Whether you have a burning question about a recipe, need assistance with an order from our Spice Kit Shop, want to suggest a new challenge, or simply wish to share your latest fiery culinary triumph, we're here to listen. Our dedicated team is committed to providing prompt and helpful responses to ensure your EpicSpicyEats experience is as enjoyable and flavorful as possible.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                We understand that navigating the world of intense flavors can sometimes lead to questions, and we strive to be your go-to resource for all things spicy. From clarifying ingredient substitutions to troubleshooting a dish that didn't quite hit the mark, our culinary experts and support staff are ready to assist. Your insights help us to continually refine our content, improve our services, and grow our community. Don't hesitate to reach out – your voice helps us ignite taste buds around the globe!
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                Before reaching out, you might find answers to common questions in our <a href="#faq" class="text-flame-orange hover:underline font-semibold">Frequently Asked Questions (FAQ)</a> section below. If your query isn't covered there, please use the contact form or direct contact methods provided. We look forward to connecting with you and sharing in your fiery adventures!
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">Send Us a Message: General Inquiry Form</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                For general inquiries, feedback, or anything that doesn't fit into a specific category, please use the contact form below. We aim to respond to all messages within 2-3 business days. Please provide as much detail as possible to help us assist you efficiently.
+            </p>
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-lg font-medium text-charcoal-black mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-4 py-3 border border-smoke-gray rounded-md focus:outline-none focus:ring-2 focus:ring-flame-orange transition duration-200">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium text-charcoal-black mb-2">Your Email Address</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-4 py-3 border border-smoke-gray rounded-md focus:outline-none focus:ring-2 focus:ring-flame-orange transition duration-200">
+                </div>
+                <div>
+                    <label for="subject" class="block text-lg font-medium text-charcoal-black mb-2">Subject</label>
+                    <input type="text" id="subject" name="subject" required
+                           class="w-full px-4 py-3 border border-smoke-gray rounded-md focus:outline-none focus:ring-2 focus:ring-flame-orange transition duration-200">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-medium text-charcoal-black mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="7" required
+                              class="w-full px-4 py-3 border border-smoke-gray rounded-md focus:outline-none focus:ring-2 focus:ring-flame-orange transition duration-200 resize-y"></textarea>
+                </div>
+                <button type="submit"
+                        class="bg-fiery-red hover:bg-flame-orange text-creamy-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Send Message
+                </button>
+            </form>
+            <p class="text-sm text-smoke-gray mt-6">
+                By submitting this form, you agree to our <a href="privacy.html" class="text-flame-orange hover:underline">Privacy Policy</a> regarding the handling of your data. We respect your privacy and will only use your information to respond to your inquiry.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">Direct Contact Information</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                If you prefer to contact us directly, or if your inquiry requires immediate attention, please use the following contact details. We're available during business hours, Monday to Friday, 9:00 AM to 5:00 PM (Eastern Time).
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Email Support</h3>
+                    <p class="text-lg text-smoke-gray mb-2">
+                        For general inquiries, partnership opportunities, or media requests:
+                    </p>
+                    <p class="text-xl font-bold text-flame-orange">
+                        <a href="mailto:info@epicspicyeats.com" class="hover:underline">info@epicspicyeats.com</a>
+                    </p>
+                    <p class="text-lg text-smoke-gray mt-4">
+                        For customer support related to orders, accounts, or technical issues:
+                    </p>
+                    <p class="text-xl font-bold text-flame-orange">
+                        <a href="mailto:support@epicspicyeats.com" class="hover:underline">support@epicspicyeats.com</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Phone & Address</h3>
+                    <p class="text-lg text-smoke-gray mb-2">
+                        You can reach us by phone during business hours:
+                    </p>
+                    <p class="text-xl font-bold text-flame-orange mb-4">
+                        +1 (555) 123-4567
+                    </p>
+                    <p class="text-lg text-smoke-gray mb-2">
+                        Our physical headquarters address for correspondence:
+                    </p>
+                    <address class="not-italic text-lg font-bold text-charcoal-black">
+                        EpicSpicyEats Headquarters<br>
+                        123 Chili Lane<br>
+                        Spice City, FL 90210<br>
+                        USA
+                    </address>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black leading-relaxed mt-8">
+                Please note that while we strive for prompt responses, email is generally the most efficient way to get in touch for non-urgent matters. For phone calls, if we are unable to answer immediately, please leave a detailed voicemail, and we will return your call as soon as possible. We appreciate your understanding and patience.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">Specific Inquiry Channels: Route Your Request</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                To help us provide you with the most efficient and accurate assistance, please consider using the specific channels below for certain types of inquiries. Directing your message to the correct department helps us streamline our response process and connect you with the right expert.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Recipe Support & Culinary Questions</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Got a question about a specific recipe? Need advice on balancing heat or ingredient substitutions? Our culinary team is ready to help you perfect your spicy dishes. Please include the recipe name and any relevant details in your message.
+                    </p>
+                    <a href="mailto:recipes@epicspicyeats.com" class="text-flame-orange hover:underline font-medium">Email Recipe Support &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Spice Kit Shop Orders & Product Inquiries</h3>
+                    <p class="text-smoke-gray mb-4">
+                        For questions regarding your Spice Kit order, shipping, returns, product details, or payment issues. Please include your order number for faster service. Our e-commerce support team will assist you.
+                    </p>
+                    <a href="mailto:shop@epicspicyeats.com" class="text-flame-orange hover:underline font-medium">Email Shop Support &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Community Challenges & Submissions</h3>
+                    <p class="text-smoke-gray mb-4">
+                        If you have questions about participating in our Spice Challenges, submitting your recipes, or inquiries about challenge rules and judging criteria. Connect with our community engagement team.
+                    </p>
+                    <a href="mailto:challenges@epicspicyeats.com" class="text-flame-orange hover:underline font-medium">Email Challenges Team &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Media & Press Inquiries</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Journalists, bloggers, and media professionals seeking information, interviews, or press kits related to EpicSpicyEats. Our media relations team will be happy to assist you.
+                    </p>
+                    <a href="mailto:media@epicspicyeats.com" class="text-flame-orange hover:underline font-medium">Email Media Relations &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Partnership & Collaboration Opportunities</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Interested in collaborating with EpicSpicyEats? Whether you're a food brand, a culinary expert, or an influencer, we're open to exciting partnerships. Share your proposal with our business development team.
+                    </p>
+                    <a href="mailto:partnerships@epicspicyeats.com" class="text-flame-orange hover:underline font-medium">Email Partnerships &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Technical Support & Website Issues</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Experiencing technical difficulties with our website, account login issues, broken links, or other site functionality problems? Our tech support team is here to help you get back on track.
+                    </p>
+                    <a href="mailto:techsupport@epicspicyeats.com" class="text-flame-orange hover:underline font-medium">Email Tech Support &rarr;</a>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black leading-relaxed mt-8">
+                By utilizing these specific email addresses, you help us to categorize and prioritize your inquiry, leading to a faster and more accurate response. We appreciate your cooperation in helping us maintain an efficient communication system for our valued users.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 id="faq" class="text-3xl font-bold text-fiery-red mb-6">Frequently Asked Questions (FAQ)</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Before contacting us, please review these frequently asked questions. You might find the answer you're looking for here!
+            </p>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: How do I adjust the heat level of a recipe?</h3>
+                    <p class="text-smoke-gray">
+                        A: Many recipes include tips for adjusting heat. Generally, you can reduce the amount of chili peppers or chili powder for less heat, or add more for an extra kick. Dairy products (like yogurt or sour cream) and acidic ingredients (like lime juice or vinegar) can help to balance or reduce spiciness. Refer to our <a href="index.html#cooking-tips" class="text-flame-orange hover:underline">Cooking Tips & Heat Balancing Guides</a> for more detailed advice on managing heat.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: Can I submit my own spicy recipe to EpicSpicyEats?</h3>
+                    <p class="text-smoke-gray">
+                        A: Absolutely! We encourage our community to share their fiery creations. Please visit our <a href="index.html#challenges" class="text-flame-orange hover:underline">Spice Challenges</a> section for information on how to participate in our ongoing challenges and submit your unique spicy recipes. We love to feature user-submitted content!
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: What payment methods do you accept in the Spice Kit Shop?</h3>
+                    <p class="text-smoke-gray">
+                        A: Our Spice Kit Shop accepts major credit cards (Visa, MasterCard, American Express, Discover) and PayPal. All payments are processed securely through our third-party payment processors. Your financial security is our top priority.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: How long does shipping take for Spice Kits?</h3>
+                    <p class="text-smoke-gray">
+                        A: Shipping times vary depending on your location and the shipping method selected at checkout. Typically, orders are processed within 1-2 business days, and standard shipping can take 5-7 business days within the USA. International shipping times will vary. You will receive a tracking number via email once your order has shipped.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: I forgot my password. How can I reset it?</h3>
+                    <p class="text-smoke-gray">
+                        A: If you've forgotten your password, please go to the login page and click on the "Forgot Password" link. Follow the instructions to reset your password. An email with a reset link will be sent to the email address associated with your account. If you encounter any issues, please contact our technical support team.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: Do you offer international shipping for Spice Kits?</h3>
+                    <p class="text-smoke-gray">
+                        A: Yes, EpicSpicyEats offers international shipping to many countries. Shipping costs and delivery times will vary based on the destination. During the checkout process, you will be able to see if your country is eligible for shipping and the associated costs. Please be aware of any customs duties or import taxes that may apply in your country, as these are the responsibility of the recipient.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: How can I stay updated on new recipes and challenges?</h3>
+                    <p class="text-smoke-gray">
+                        A: The best way to stay updated is to subscribe to our newsletter! You can find the subscription option on our <a href="index.html" class="text-flame-orange hover:underline">Home Page</a>. Also, follow us on our social media channels (links in the footer) for real-time updates, behind-the-scenes content, and community highlights. Our <a href="blog.html" class="text-flame-orange hover:underline">Blog</a> is also regularly updated with news and stories.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: Are your recipes suitable for specific dietary needs (e.g., vegetarian, vegan, gluten-free)?</h3>
+                    <p class="text-smoke-gray">
+                        A: Many of our recipes include notes or suggestions for dietary adaptations. While we strive to offer diverse options, not all recipes are inherently suitable for every dietary need. We recommend carefully reviewing the ingredient lists and making necessary substitutions based on your requirements. We are continuously working to expand our collection of recipes to cater to a wider range of dietary preferences.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: What is your return policy for Spice Kits?</h3>
+                    <p class="text-smoke-gray">
+                        A: We want you to be completely satisfied with your purchase. If you receive a damaged or incorrect item, please contact our shop support team within 7 days of delivery with your order number and a description of the issue. We will work with you to arrange a replacement or refund. Due to the nature of food products, we generally do not accept returns for opened items unless there is a quality issue. Please refer to our <a href="terms.html" class="text-flame-orange hover:underline">Terms of Service</a> for full details on our return policy.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-2">Q: How can I provide feedback on the website or suggest new features?</h3>
+                    <p class="text-smoke-gray">
+                        A: We highly value your input! You can use the general inquiry form above to submit your feedback or suggestions. We are always looking for ways to improve EpicSpicyEats and make it more user-friendly and engaging. Your ideas help us shape the future of our platform.
+                    </p>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black leading-relaxed mt-8">
+                We hope this FAQ section has addressed some of your immediate questions. If you still need assistance, please don't hesitate to reach out through one of the contact methods listed above. Your satisfaction is our priority!
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">Our Commitment to Timely Responses</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                At EpicSpicyEats, we understand that when you reach out, you're looking for a timely and helpful response. We are committed to providing excellent customer service and strive to address all inquiries as quickly and efficiently as possible. Our standard response time for emails and form submissions is typically within 2-3 business days. However, during peak periods, such as after a new challenge launch or a major site update, response times may be slightly longer. We appreciate your patience during these times.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                For urgent matters, especially those related to account security or critical website functionality issues, we prioritize responses and aim to address them within 24 hours. Please clearly indicate the urgency of your matter in the subject line or the beginning of your message if it falls into this category. For phone inquiries, if we are unable to answer your call directly, please leave a detailed voicemail, and we will return your call within one business day. Providing your name, contact number, and a brief description of your issue will help us prepare for your call.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                We also encourage you to check your spam or junk mail folder, as sometimes our replies might inadvertently end up there. Adding our email addresses (e.g., info@epicspicyeats.com, support@epicspicyeats.com) to your safe sender list can help ensure you receive our communications. Your understanding and cooperation help us maintain an effective and responsive support system for the entire EpicSpicyEats community. Thank you for being a part of our fiery family!
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-black text-creamy-white py-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <h4 class="text-xl font-semibold text-fiery-red mb-2">EpicSpicyEats Headquarters</h4>
+                <p class="text-smoke-gray">123 Chili Lane, Spice City, FL 90210, USA</p>
+                <p class="text-smoke-gray">Email: <a href="mailto:info@epicspicyeats.com" class="hover:text-flame-orange">info@epicspicyeats.com</a></p>
+                <p class="text-smoke-gray">Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="mb-4">
+                <p class="text-sm text-smoke-gray">&copy; 2025 EpicSpicyEats. All rights reserved.</p>
+                <p class="text-sm text-smoke-gray">“Bold Flavors. Fiery Adventures.”</p>
+            </div>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <!-- Placeholder for social media icons -->
+                <a href="#" class="hover:text-flame-orange transition duration-300">🌶️</a>
+                <a href="#" class="hover:text-flame-orange transition duration-300">🔥</a>
+                <a href="#" class="hover:text-flame-orange transition duration-300">🍜</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

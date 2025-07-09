@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicSpicyEats Cookies Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA; /* Creamy White */
+            color: #212121; /* Charcoal Black */
+        }
+        .text-fiery-red { color: #D32F2F; }
+        .bg-fiery-red { background-color: #D32F2F; }
+        .text-charcoal-black { color: #212121; }
+        .bg-charcoal-black { background-color: #212121; }
+        .text-flame-orange { color: #FF5722; }
+        .bg-flame-orange { background-color: #FF5722; }
+        .text-smoke-gray { color: #757575; }
+        .bg-smoke-gray { background-color: #757575; }
+        .bg-creamy-white { background-color: #FAFAFA; }
+
+        /* Cookie Consent Dialogue Box */
+        #cookieConsentBox {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #212121; /* Charcoal Black */
+            color: #FAFAFA; /* Creamy White */
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: none; /* Hidden by default */
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        #cookieConsentBox p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        #cookieConsentBox button {
+            background-color: #D32F2F; /* Fiery Red */
+            color: #FAFAFA; /* Creamy White */
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Full rounded */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            border: none;
+        }
+        #cookieConsentBox button:hover {
+            background-color: #FF5722; /* Flame Orange */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+    <!-- Header -->
+    <header class="bg-charcoal-black text-creamy-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-3xl font-bold text-fiery-red mb-4 md:mb-0">
+                EpicSpicyEats
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-white">
+                    <li><a href="index.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="blog.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Blog</a></li>
+                    <li><a href="privacy.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-5xl font-extrabold text-charcoal-black text-center mb-12">
+            EpicSpicyEats Cookies Policy
+        </h1>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">1. Introduction to Our Cookies Policy</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Welcome to the EpicSpicyEats Cookies Policy. This document is designed to provide you with a comprehensive and transparent understanding of how EpicSpicyEats ("we," "us," or "our") uses cookies and similar technologies when you visit our website, use our mobile applications, or interact with any of our online services (collectively, the "Services"). We believe in empowering our users with knowledge about their data, and this policy outlines what cookies are, the different types we use, why we use them, and crucially, how you can manage your preferences and choices regarding their use. Your privacy is paramount to us, and we are committed to ensuring that our use of cookies is always in compliance with applicable data protection laws and industry best practices.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                By continuing to browse and use our Services, you are consenting to our use of cookies in accordance with this Cookies Policy. If you do not agree with our use of cookies in the manner described herein, you have the option to adjust your browser settings or use other tools to manage your cookie preferences, as detailed in Section 5 of this policy. Please note that disabling certain types of cookies may impact the functionality and overall experience of our Services. We encourage you to read this policy in conjunction with our <a href="privacy.html" class="text-flame-orange hover:underline">Privacy Policy</a>, which provides broader details on how we collect, use, and protect your personal information.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Our commitment extends beyond mere compliance; we aim to foster a relationship of trust with our community of spice enthusiasts. Understanding how technology like cookies enhances your experience, from remembering your favorite fiery recipes to personalizing content, is key to this trust. This policy will delve into the technical aspects of cookies, their various classifications, and the specific purposes they serve on EpicSpicyEats. We will also provide practical guidance on how you can take control of your cookie settings across different platforms and browsers, ensuring you have the tools to make informed decisions about your online privacy.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                This document will cover:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>A detailed explanation of what cookies are and how they function.</li>
+                    <li>The various categories of cookies and similar technologies we employ.</li>
+                    <li>The specific purposes for which each type of cookie is used on EpicSpicyEats.</li>
+                    <li>Your options for managing, accepting, or declining cookies.</li>
+                    <li>Information about third-party cookies and their implications.</li>
+                    <li>Our commitment to data protection in relation to cookie usage.</li>
+                    <li>How we will inform you about updates to this policy.</li>
+                    <li>Contact information for any cookie-related inquiries.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">2. What Are Cookies and Similar Technologies?</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                In the context of web browsing, a "cookie" is a small text file that a website saves on your computer or mobile device when you visit the site. Cookies are widely used to make websites work, or work more efficiently, as well as to provide information to the owners of the site. They enable the website to remember your actions and preferences (such as login, language, font size, and other display preferences) over a period of time, so you don't have to keep re-entering them whenever you come back to the site or browse from one page to another. This fundamental functionality is crucial for a seamless online experience, allowing for features like persistent logins, shopping cart contents, and personalized content delivery. Without cookies, many modern web applications would be significantly less user-friendly or entirely non-functional, requiring users to re-authenticate or re-select preferences with every interaction.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Beyond traditional HTTP cookies, we also utilize other similar technologies that serve comparable purposes. These technologies help us to collect data about your interactions with our Services, enhance functionality, and deliver relevant content. Understanding these technologies is essential for a complete picture of our data practices. They often work in conjunction with cookies or as alternatives to them, particularly in environments where traditional cookies might be limited or less effective. Their collective aim is to provide a richer, more responsive, and personalized user experience while also enabling us to gather valuable insights into how our Services are being used, which in turn informs our continuous improvement efforts.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">2.1. Types of Cookies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Cookies can be categorized in several ways based on their duration and origin:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **Session Cookies:** These are temporary cookies that remain on your device only until you close your web browser. They are used to remember your activity during a single browsing session. For example, if you add items to a shopping cart, a session cookie ensures those items remain in your cart as you navigate different pages on the site. Once you close your browser, the session cookie is deleted, and the information it held is lost. This ephemeral nature makes them ideal for managing temporary states without leaving a lasting footprint on your device.
+                    </li>
+                    <li>
+                        **Persistent Cookies:** These cookies remain on your device for a longer period, even after you close your browser. They have an expiration date, which can range from a few minutes to several years. Persistent cookies are used to remember your preferences and settings for future visits, such as login details, language preferences, or personalized content. This allows for a more convenient and tailored experience each time you return to a website, as your previous choices are recalled automatically.
+                    </li>
+                    <li>
+                        **First-Party Cookies:** These cookies are set directly by the website you are visiting (i.e., by EpicSpicyEats in this case). They are used to enable core site functionality, remember your preferences, and collect analytics data about your usage of our specific Services. Because they originate from our domain, they are generally considered more trustworthy and are essential for the basic operation of EpicSpicyEats.
+                    </li>
+                    <li>
+                        **Third-Party Cookies:** These cookies are set by a domain other than the one you are visiting. They are typically used for advertising, analytics, or social media integration. For example, if we embed a video from YouTube or use Google Analytics on our site, YouTube or Google may set a third-party cookie on your device. These cookies allow third parties to track your browsing activity across different websites, often to build a profile of your interests for targeted advertising.
+                    </li>
+                </ul>
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">2.2. Similar Technologies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                In addition to traditional cookies, we may use other technologies that function similarly:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **Web Beacons (Pixel Tags):** These are tiny graphic images (often transparent) embedded in web pages or emails. They are used to track user activity, such as whether a page has been viewed or an email opened. Web beacons often work in conjunction with cookies to gather data, but they can also function independently to collect information like IP addresses, browser types, and the time a web page or email was viewed. They are commonly used in marketing and analytics to measure campaign effectiveness.
+                    </li>
+                    <li>
+                        **Local Storage (HTML5):** This technology allows websites to store larger amounts of data (up to 5MB or more) directly in your browser, similar to persistent cookies but with greater capacity. Data stored in local storage persists even after the browser is closed and reopened, making it useful for caching content, remembering user preferences, or storing offline data for web applications. Unlike cookies, data in local storage is not automatically sent with every HTTP request, which can improve performance.
+                    </li>
+                    <li>
+                        **Flash Cookies (Local Shared Objects):** These are data files stored on your computer by websites that use Adobe Flash Player. They can store more data than regular cookies and are often used for features like video playback settings or game data. Flash cookies can be more persistent and harder to control through standard browser settings, requiring specific management through Adobe Flash Player settings.
+                    </li>
+                    <li>
+                        **ETags (Entity Tags):** These are mechanisms that web servers and browsers use to determine if a component of a web page in a browser's cache matches the one on the server, thus allowing the browser to reuse cached content. While not primarily designed for tracking, ETags can be used as a form of "supercookie" because they can be used to re-identify users even after traditional cookies have been deleted.
+                    </li>
+                    <li>
+                        **Device Fingerprinting:** This involves collecting and combining various pieces of information about your device (e.g., browser type, operating system, installed fonts, screen resolution, IP address) to create a unique "fingerprint" that can identify your device across different websites and sessions. Unlike cookies, device fingerprints are not stored on your device and cannot be easily deleted, making them a more persistent tracking method. We use this technology primarily for security and fraud prevention.
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">3. How EpicSpicyEats Uses Cookies: Our Purposes</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                EpicSpicyEats uses cookies and similar technologies for a variety of purposes, all aimed at enhancing your experience, improving our Services, and ensuring their effective operation. Our use of these technologies falls into several key categories, each serving a distinct function to provide you with the best possible culinary journey. We are committed to using cookies responsibly, ensuring that they contribute positively to your interaction with our platform while respecting your privacy. Each cookie serves a specific role, from enabling basic navigation to delivering personalized content and understanding user behavior.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">3.1. Strictly Necessary Cookies (Essential Cookies)</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                These cookies are absolutely essential for the website to function correctly and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. Without these cookies, certain core functionalities of the website would not be available, making it impossible to navigate the site effectively or use essential features. They are crucial for maintaining security and ensuring the basic operational integrity of EpicSpicyEats.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 1: Enabling Core Website Functionality.** These cookies are fundamental to the operation of the EpicSpicyEats website. They allow you to navigate through different sections, access secure areas, and utilize essential services like user authentication. For example, when you log into your account, a strictly necessary cookie remembers your login status, so you don't have to re-enter your credentials on every page you visit within your session. This ensures a continuous and uninterrupted browsing experience, allowing you to seamlessly move between recipes, blog posts, and community forums without repeated authentication prompts. Their absence would severely hinder basic site usability and could prevent access to personalized content or interactive features that require a logged-in state.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 2: User Authentication and Session Management.** A primary role of essential cookies is to manage user sessions. When you successfully log into your EpicSpicyEats account, a session cookie is generated, containing a unique identifier that links your current browsing session to your user profile. This cookie allows our servers to recognize you as an authenticated user as you move between pages, ensuring that you remain logged in and can access your saved recipes, participate in challenges, and post comments. Without this mechanism, every page load would be treated as a new, unauthenticated request, requiring constant re-login and severely disrupting the user experience.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 3: Maintaining User-Specific Preferences (Temporary).** While functionality cookies handle long-term preferences, strictly necessary session cookies can temporarily remember certain user choices within a single browsing session. For instance, if you apply a filter to a recipe search, a session cookie might retain that filter setting as you browse through the results, ensuring consistency until you close your browser. This temporary memory enhances immediate usability, preventing the need to re-select options repeatedly during a short interaction period, thereby streamlining your current browsing flow and making the site more responsive to your immediate needs.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 4: Security and Fraud Prevention.** Essential cookies play a vital role in maintaining the security of our Services and protecting against fraudulent activities. They can help detect suspicious login attempts, prevent cross-site request forgery (CSRF) attacks, and identify unusual browsing patterns that might indicate unauthorized access to your account. By tracking session integrity and user behavior within a secure context, these cookies contribute to a safer online environment for all EpicSpicyEats users, safeguarding your personal data and ensuring the integrity of our platform. Their security functions are non-negotiable for protecting both users and the service itself.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 5: Compliance with Legal Obligations (e.g., Cookie Consent).** Paradoxically, a strictly necessary cookie is often used to remember your cookie consent preferences. When you accept or decline cookies via our consent banner, a cookie is set to store your choice, preventing the banner from reappearing on every subsequent visit. This ensures compliance with privacy regulations like GDPR and CCPA, which mandate user consent for certain cookie categories. Without this essential cookie, we would be unable to effectively manage and respect your expressed preferences regarding data collection, leading to a frustrating and non-compliant user experience where consent is repeatedly requested.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">3.2. Performance and Analytics Cookies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                These cookies collect information about how visitors use our Services, such as which pages are visited most often, how much time is spent on each page, and if users encounter error messages. This data helps us understand and analyze user behavior, identify areas for improvement, and optimize the performance of our website. The information collected by these cookies is aggregated and therefore anonymous, meaning it cannot be used to identify you personally. They are crucial for our continuous efforts to enhance the user experience and ensure the efficiency of our platform.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 6: Website Performance Monitoring.** Performance cookies are instrumental in monitoring the overall health and speed of our website. They track metrics such as page load times, server response times, and the efficiency of content delivery networks (CDNs). By analyzing this data, we can identify bottlenecks, optimize our infrastructure, and ensure that EpicSpicyEats loads quickly and functions smoothly for all users, regardless of their location or device. This continuous monitoring helps us maintain a high-quality user experience by minimizing delays and ensuring reliable access to our content.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 7: Understanding User Navigation Paths.** These cookies help us understand how users navigate through our website. They track the sequence of pages visited, the entry and exit points, and the overall flow of user journeys. By analyzing these paths, we can identify popular content, discover areas where users might get lost or frustrated, and optimize our site's structure and internal linking. This insight is vital for improving usability and ensuring that users can easily find the recipes, articles, and features they are looking for, enhancing their overall satisfaction with the platform.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 8: Identifying Popular Content and Features.** Analytics cookies allow us to pinpoint which recipes, blog posts, spice kits, or community challenges are most popular among our users. By tracking views, clicks, and engagement metrics, we gain valuable insights into content preferences and trends within the spicy food community. This data directly informs our content strategy, helping us to create more of what our audience loves and to highlight features that resonate most, ensuring that EpicSpicyEats remains a relevant and engaging resource for all spice enthusiasts.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 9: Detecting and Diagnosing Technical Issues.** When users encounter errors or broken pages, performance cookies help us identify and diagnose these technical issues. They can record instances of error messages, broken links, or functionality failures, providing our technical team with the necessary data to pinpoint the root cause and implement fixes quickly. This proactive approach to error detection and resolution ensures a more stable and reliable platform, minimizing disruptions and improving the overall quality of the user experience by reducing frustration caused by technical glitches.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 10: Optimizing Content Delivery and Resource Allocation.** By collecting data on user location, device type, and network conditions, performance cookies help us optimize the delivery of content. For example, we might use this information to serve images or videos from a content delivery network (CDN) server closest to your location, or to adjust content quality based on your internet speed. This ensures faster loading times and a smoother experience, while also allowing us to efficiently allocate our server resources, improving the scalability and cost-effectiveness of our infrastructure.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 11: Understanding User Demographics (Aggregated).** While individual data is anonymized, analytics cookies can help us understand broad demographic trends of our user base. By analyzing aggregated data related to general geographic location (derived from IP address), device types, and browser usage, we can gain insights into who our audience is. This helps us tailor our content and marketing efforts to better serve our community, for example, by featuring recipes from regions that are popular among our users or optimizing our site for the most commonly used devices.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 12: A/B Testing and Feature Experimentation.** Performance cookies are crucial for conducting A/B tests, where different versions of a webpage or feature are shown to different segments of users to determine which performs better. By tracking user engagement and conversion rates for each version, we can make data-driven decisions about design changes, new features, and content layouts. This iterative approach to development ensures that improvements to EpicSpicyEats are based on real user behavior and preferences, leading to a more effective and user-friendly platform.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 13: Measuring Campaign Effectiveness (Non-Personalized).** While targeting cookies are used for personalized advertising, performance cookies can measure the overall effectiveness of marketing campaigns in a non-personalized way. For instance, they can track how many users arrived at EpicSpicyEats from a specific campaign link and their general activity on the site, without linking this to individual user profiles. This helps us understand which marketing channels are driving traffic and engagement, allowing us to optimize our outreach efforts more broadly.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 14: Cross-Device Usage Insights (Aggregated).** In some cases, analytics cookies, combined with other identifiers, can provide aggregated insights into cross-device usage patterns. This means understanding if users tend to start browsing on a mobile device and then switch to a desktop, or vice versa. This aggregated data helps us optimize our responsive design and ensure a consistent experience across all devices, even if we cannot identify the individual user across these devices. It's about understanding the general user journey across different platforms.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">3.3. Functionality Cookies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Functionality cookies allow our Services to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. For example, they can remember changes you have made to text size, fonts, and other customizable parts of web pages. They may also be used to provide services you have asked for, such as watching a video or commenting on a blog. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 15: Remembering User Preferences and Settings.** These cookies are crucial for personalizing your experience on EpicSpicyEats by remembering your specific preferences from previous visits. This could include your preferred language, your chosen heat level filter for recipes, or even your display settings. By recalling these choices, functionality cookies save you the effort of reconfiguring settings every time you return to the site, creating a more convenient and tailored browsing environment. This personalization makes the platform feel more intuitive and responsive to your individual needs and tastes.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 16: Personalizing Content Delivery (Non-Tracking).** While not for advertising, functionality cookies can help personalize content based on your past interactions within EpicSpicyEats. For example, if you frequently view vegan spicy recipes, these cookies might help surface similar content on your homepage or in recommendation widgets, without tracking your activity across other websites. This enhances the relevance of the content you see, ensuring that the recipes and articles presented align more closely with your culinary interests, thereby enriching your overall experience on our platform.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 17: Remembering Login Details for Convenience.** For users who opt to "remember me" when logging in, functionality cookies store encrypted login credentials (or a secure token) to keep you logged in across multiple sessions. This eliminates the need to re-enter your username and password every time you visit EpicSpicyEats, significantly improving convenience and streamlining access to your personalized account features. This feature is widely used across the web to enhance user experience, provided users are aware of the implications for shared devices.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 18: Enabling Interactive Features (e.g., Commenting).** Functionality cookies facilitate interactive elements on our site, such as commenting systems on blog posts or recipe reviews. They might remember your name or email address if you've previously commented, pre-filling fields for your convenience. This makes it easier and faster for you to engage with our content and community, encouraging more participation and interaction without requiring you to repeatedly input the same information, thereby fostering a more dynamic and connected user environment.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 19: Remembering Shopping Cart Contents.** If EpicSpicyEats were to implement a full e-commerce shopping cart (beyond the current conceptual Spice Kit Shop), functionality cookies would be essential for remembering the items you've added to your cart as you browse different product pages or even leave and return to the site within a certain timeframe. This ensures that your selected items persist, allowing for a seamless shopping experience and preventing the frustration of losing your cart contents before checkout.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 20: Video Playback Preferences.** If our Services include embedded videos, functionality cookies might remember your preferred video quality settings, volume levels, or playback position. This means that when you return to watch another video or re-watch a previous one, your preferences are automatically applied, providing a consistent and personalized media consumption experience. This small but significant detail contributes to overall user satisfaction by reducing the need for manual adjustments.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 21: Localized Content Delivery.** For users accessing EpicSpicyEats from different geographical regions, functionality cookies can remember your general location (e.g., country or state, derived from IP address) to serve localized content, such as regional recipe variations or specific spice kit availability. This enhances the relevance of the content presented to you, making your experience more tailored to your local culinary context and preferences, without requiring you to manually select your region each time.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 22: Accessibility Preferences.** Functionality cookies can also store accessibility settings chosen by users, such as text size adjustments, high contrast modes, or other visual aids. This ensures that once a user configures their preferred accessibility options, these settings persist across sessions, making EpicSpicyEats more accessible and comfortable for individuals with various needs. This commitment to inclusivity is supported by these specific cookie functions, improving usability for a broader audience.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">3.4. Targeting and Advertising Cookies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                These cookies are used to deliver advertisements more relevant to you and your interests. They are usually placed by advertising networks with our permission. They remember that you have visited a website and this information is shared with other organizations, such as advertisers. Quite often, targeting or advertising cookies will be linked to site functionality provided by the other organization. While EpicSpicyEats does not directly sell your data, these cookies enable us to display relevant ads and measure the effectiveness of our marketing campaigns.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 23: Delivering Personalized Advertisements.** Targeting cookies are primarily used by our advertising partners to build a profile of your interests based on your browsing activity across various websites, including EpicSpicyEats. This profile then allows them to display advertisements that are more relevant to your inferred preferences, such as ads for spicy food products, cooking equipment, or related culinary services. The goal is to make advertising more effective for both advertisers and users by showing content that is genuinely of interest, rather than generic ads.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 24: Measuring Advertising Campaign Effectiveness.** These cookies play a crucial role in measuring the performance of our advertising campaigns. They track metrics such as how many times an ad was shown, how many users clicked on it, and whether those clicks led to a desired action (e.g., signing up for a newsletter, viewing a recipe, or making a purchase). This data helps us and our advertising partners optimize ad spend and improve the relevance and efficiency of future campaigns, ensuring that our marketing efforts are impactful.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 25: Limiting Ad Frequency (Ad Capping).** Targeting cookies can also be used to prevent you from seeing the same advertisement too many times. By tracking when and how often a particular ad has been displayed to your browser, these cookies help implement "ad capping," ensuring a more balanced and less intrusive advertising experience. This improves user satisfaction by reducing ad fatigue and making the overall advertising presence on EpicSpicyEats less repetitive.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 26: Cross-Site Tracking for Interest Profiling.** A key characteristic of targeting cookies is their ability to track your browsing activity across different websites that also use the same advertising network. This allows advertisers to build a more comprehensive profile of your interests and behaviors, even when you leave EpicSpicyEats. This cross-site tracking is what enables highly personalized advertising, as it aggregates data from various online touchpoints to create a detailed picture of your preferences.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 27: Retargeting and Remarketing Campaigns.** These cookies are essential for retargeting or remarketing efforts. If you visit a specific product page on our Spice Kit Shop but don't make a purchase, a targeting cookie might be set. This allows our advertising partners to later show you ads for that specific product (or similar products) on other websites you visit, encouraging you to return and complete your purchase. This strategy aims to re-engage users who have shown prior interest in our offerings.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 28: Affiliate Marketing Tracking.** If EpicSpicyEats participates in affiliate marketing programs, targeting cookies are used to track referrals. When you click on an affiliate link on our site and make a purchase on a third-party website, a cookie is placed to attribute that sale back to EpicSpicyEats, allowing us to earn a commission. This tracking is crucial for the operation of affiliate partnerships and helps support our content creation efforts.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 29: Demographic and Interest-Based Segmentation.** Advertising networks use targeting cookies to segment audiences into various demographic and interest-based groups. For example, users who frequently visit cooking websites might be grouped into a "food enthusiasts" segment. This segmentation allows advertisers to deliver highly targeted campaigns to specific audiences, improving the efficiency and relevance of their ad placements across the web, including on EpicSpicyEats.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 30: Ad Personalization Across Devices.** In some advanced scenarios, advertising cookies, combined with other identifiers (like hashed email addresses), can contribute to cross-device ad personalization. This means that if you browse EpicSpicyEats on your laptop and then switch to your smartphone, you might see related ads on both devices. This is achieved by linking your devices to a single user profile, aiming to provide a consistent advertising experience regardless of the device you are using.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">3.5. Social Media Cookies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies, you may not be able to use or see these sharing tools.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 31: Enabling Social Sharing Functionality.** Social media cookies are set by platforms like Facebook, Twitter, Instagram, or Pinterest when we integrate their sharing buttons or embedded content (e.g., a shared recipe image) on EpicSpicyEats. These cookies allow you to easily share our recipes, articles, or challenge updates with your friends and followers on those social networks without leaving our site. They facilitate the seamless connection between our content and your social circles.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 32: Tracking Social Engagement Metrics.** These cookies help social media platforms and us understand how users interact with our content on their networks. They track metrics such as how many times a piece of content is shared, liked, or commented on through our embedded tools. This aggregated data provides insights into the social reach and virality of our content, helping us understand what resonates with our audience and how our content spreads across social channels.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 33: Personalizing Social Media Feeds.** When social media cookies are present, the respective platforms may use this information to personalize the content you see in your social media feeds. For example, if you frequently share spicy recipes from EpicSpicyEats, the social media platform might show you more content related to spicy food from other sources, or from EpicSpicyEats itself, aiming to keep you engaged with relevant topics.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 34: Social Login Integration.** If EpicSpicyEats offers the option to log in using your social media accounts (e.g., "Login with Facebook"), social media cookies facilitate this process. They enable a secure connection between your social media profile and your EpicSpicyEats account, allowing for a quick and convenient registration or login experience without needing to create new credentials. This streamlines the onboarding process for users who prefer to leverage existing social identities.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 35: Building Social Media Audience Segments.** Social media platforms can use these cookies to build audience segments based on your interactions with EpicSpicyEats. For instance, if you visit our site, you might be added to a "EpicSpicyEats website visitor" audience on Facebook. This allows us to then run targeted advertising campaigns specifically to this audience on that social media platform, reaching users who have already shown interest in our content.
+            </p>
+
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">4. Your Cookie Choices and Management: Taking Control</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                EpicSpicyEats is committed to providing you with control over your cookie preferences. While some cookies are strictly necessary for the functioning of our Services, you have choices regarding other types of cookies. Your ability to manage these settings empowers you to decide how your browsing activity is tracked and used. Understanding these options is crucial for maintaining your online privacy and tailoring your experience to your comfort level. We provide various methods for you to exercise these choices, from browser-level controls to specific opt-out mechanisms offered by third parties.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">4.1. Managing Cookies Through Your Browser Settings</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Most web browsers allow you to control cookies through their settings. You can usually configure your browser to accept all cookies, reject all cookies, or notify you when a cookie is being sent. You can also delete existing cookies at any time. Please be aware that blocking or deleting cookies may impact your ability to use certain features or access certain content on EpicSpicyEats and other websites.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 36: How to Clear Cookies in Google Chrome.** To clear cookies in Google Chrome, open the browser, click the three-dot menu in the top right corner, go to "More tools," then "Clear browsing data." In the pop-up, select a time range (e.g., "All time"), check "Cookies and other site data," and click "Clear data." This action will remove all stored cookies from your Chrome browser, effectively resetting your cookie-based preferences and tracking information across all websites you have visited. It's a comprehensive way to start fresh with your cookie settings.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 37: How to Disable Cookies in Mozilla Firefox.** In Mozilla Firefox, you can manage cookies by clicking the menu icon (three horizontal lines) in the top right, selecting "Settings," then "Privacy & Security." Under "Enhanced Tracking Protection," you can choose "Standard," "Strict," or "Custom" settings to block different levels of trackers and cookies. You can also manage "Cookies and Site Data" to clear specific site data or block all third-party cookies. These options provide granular control over how Firefox handles cookies, allowing for various levels of privacy protection.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 38: Managing Cookies in Apple Safari.** For Apple Safari users, cookie management is found in the "Safari" menu, then "Preferences," and finally the "Privacy" tab. Here, you can select "Prevent cross-site tracking" to block third-party cookies, and "Block all cookies" to disable all cookies. You can also click "Manage Website Data" to view and remove cookies stored by specific websites. Safari's privacy features are designed to give users strong control over tracking technologies, emphasizing cross-site privacy.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 39: Cookie Settings in Microsoft Edge.** In Microsoft Edge, click the three-dot menu in the top right, go to "Settings," then "Privacy, search, and services." Under "Tracking prevention," you can choose "Basic," "Balanced," or "Strict" to block trackers. You can also go to "Choose what to clear every time you close the browser" or "Clear browsing data now" to remove cookies. Edge provides a balance of performance and privacy, allowing users to customize their tracking prevention levels.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                **Point 40: General Browser Settings for All Cookies.** Beyond specific browsers, the general principle for managing cookies involves navigating to your browser's privacy or security settings. Look for options related to "cookies," "site data," "tracking prevention," or "clear browsing data." Most browsers offer the ability to block all cookies, block third-party cookies only, or manage cookies on a site-by-site basis. Understanding these universal settings empowers you to apply your cookie preferences consistently across all websites you visit, not just EpicSpicyEats.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">4.2. Opt-Out Mechanisms for Advertising Cookies</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Many advertising networks offer mechanisms to opt out of their targeted advertising cookies. While opting out does not mean you will no longer receive advertising, it means that the ads you see may be less relevant to your interests.
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **Network Advertising Initiative (NAI):** The NAI provides a consumer opt-out page where you can opt out of receiving targeted ads from NAI member companies. Visit <a href="http://optout.networkadvertising.org/" class="text-flame-orange hover:underline" target="_blank">http://optout.networkadvertising.org/</a>.
+                    </li>
+                    <li>
+                        **Digital Advertising Alliance (DAA):** The DAA offers a similar opt-out tool for DAA participating companies. Visit <a href="http://optout.aboutads.info/" class="text-flame-orange hover:underline" target="_blank">http://optout.aboutads.info/</a>.
+                    </li>
+                    <li>
+                        **Your Online Choices (Europe):** For users in Europe, the European Interactive Digital Advertising Alliance (EDAA) provides an opt-out platform. Visit <a href="http://www.youronlinechoices.eu/" class="text-flame-orange hover:underline" target="_blank">http://www.youronlinechoices.eu/</a>.
+                    </li>
+                </ul>
+                These tools are designed to provide a centralized way to manage your preferences across multiple advertising partners, offering a significant degree of control over the personalized advertising you encounter online.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">4.3. Mobile Device Settings</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                For mobile applications, your device's operating system may provide options to limit ad tracking.
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **iOS Devices:** Go to "Settings" > "Privacy" > "Tracking" and disable "Allow Apps to Request to Track." You can also reset your Advertising Identifier.
+                    </li>
+                    <li>
+                        **Android Devices:** Go to "Settings" > "Google" > "Ads" and enable "Opt out of Ads Personalization" or "Reset advertising ID."
+                    </li>
+                </ul>
+                These settings control how mobile advertising identifiers are used for personalized advertising within apps, offering a parallel level of control to browser-based cookie management.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-charcoal-black mb-3">4.4. Cookie Consent Management Platform (CMP)</h3>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                EpicSpicyEats utilizes a cookie consent management platform (CMP) to provide you with a granular control panel for your cookie preferences directly on our website. When you first visit our site, or at any time by clicking the "Cookie Settings" link (if available in the footer or a dedicated section), you can access this panel. The CMP allows you to:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **Accept All Cookies:** Consent to the use of all cookie categories.
+                    </li>
+                    <li>
+                        **Decline All Non-Essential Cookies:** Opt out of all cookies except those strictly necessary for site functionality.
+                    </li>
+                    <li>
+                        **Customize Preferences:** Selectively enable or disable specific cookie categories (e.g., allow analytics but block advertising cookies).
+                    </li>
+                    <li>
+                        **Review Cookie Details:** View a detailed list of the specific cookies used by EpicSpicyEats, including their purpose, provider, and expiration date.
+                    </li>
+                </ul>
+                This CMP is designed to be user-friendly and transparent, ensuring you have clear visibility and control over the cookies deployed on your device by our Services. Your choices made through the CMP will be remembered for future visits (via a consent cookie) unless you clear your browser cookies.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">5. Third-Party Cookies on EpicSpicyEats</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                As mentioned, EpicSpicyEats integrates services from various third-party providers, which may set their own cookies on your device when you interact with our Services. These third parties include, but are not limited to, analytics providers, advertising networks, and social media platforms. The use of cookies by these third parties is governed by their respective privacy and cookies policies, not by EpicSpicyEats' policy. We encourage you to review their policies to understand their data collection and usage practices.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                Common third-party services that may set cookies via EpicSpicyEats include:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **Google Analytics:** Used for website analytics, collecting anonymous data on user behavior. (<a href="https://policies.google.com/privacy" class="text-flame-orange hover:underline" target="_blank">Google Privacy Policy</a>)
+                    </li>
+                    <li>
+                        **Google Ads/AdSense:** Used for advertising and displaying relevant ads. (<a href="https://policies.google.com/technologies/ads" class="text-flame-orange hover:underline" target="_blank">Google Ads Policy</a>)
+                    </li>
+                    <li>
+                        **Social Media Plugins (e.g., Facebook, Twitter, Pinterest):** Enable social sharing and may track your activity across sites if you are logged into those platforms. (<a href="https://www.facebook.com/policy.php" class="text-flame-orange hover:underline" target="_blank">Facebook Data Policy</a>, <a href="https://twitter.com/en/privacy" class="text-flame-orange hover:underline" target="_blank">Twitter Privacy Policy</a>, <a href="https://policy.pinterest.com/en/privacy-policy" class="text-flame-orange hover:underline" target="_blank">Pinterest Privacy Policy</a>)
+                    </li>
+                    <li>
+                        **Payment Processors (e.g., Stripe, PayPal):** While we do not directly store your full payment card details, these services may use cookies to facilitate secure transactions and fraud prevention on their platforms when you make a purchase through our Spice Kit Shop. (<a href="https://stripe.com/privacy" class="text-flame-orange hover:underline" target="_blank">Stripe Privacy Policy</a>, <a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full" class="text-flame-orange hover:underline" target="_blank">PayPal Privacy Policy</a>)
+                    </li>
+                    <li>
+                        **Content Delivery Networks (CDNs):** May set cookies to optimize content delivery and performance. (e.g., Cloudflare, Akamai - refer to their respective policies)
+                    </li>
+                </ul>
+                We select our third-party partners carefully, ensuring they adhere to robust data protection standards. However, we cannot directly control the specific cookies they set or how they use the data collected. Your management of third-party cookies is primarily done through your browser settings or the opt-out mechanisms provided by the respective third parties, as detailed in Section 4.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">6. Data Protection and Privacy (Cross-Reference)</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                The information collected through cookies and similar technologies may, in some instances, constitute personal data. When this occurs, our collection, use, and processing of such data are governed by our comprehensive <a href="privacy.html" class="text-flame-orange hover:underline">Privacy Policy</a>. We encourage you to read our Privacy Policy to understand how we handle your personal information, including details on:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>The types of personal data we collect.</li>
+                    <li>The purposes for which we collect and use your personal data.</li>
+                    <li>How we share your personal data with third parties.</li>
+                    <li>The security measures we implement to protect your data.</li>
+                    <li>Your rights regarding your personal information (e.g., access, rectification, erasure).</li>
+                    <li>Information on international data transfers.</li>
+                </ul>
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                This Cookies Policy specifically focuses on the technical aspects and management of cookies, while the Privacy Policy provides the broader legal framework for our data handling practices. Both policies work in conjunction to ensure transparency and uphold your privacy rights.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">7. Changes to Our Cookies Policy</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                EpicSpicyEats may update this Cookies Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We reserve the right to modify this Cookies Policy at any time, so please review it frequently.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                We will notify you of any material changes by posting the new Cookies Policy on this page and updating the "Last Updated" date at the top of this policy. For significant changes, we may provide more prominent notice, such as through email notification (sent to the primary email address specified in your account, if applicable) or a prominent banner on our website before the changes become effective.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                We encourage you to periodically review this Cookies Policy to stay informed about how we are using cookies. Your continued use of the Services after the revised Cookies Policy has become effective indicates that you have read, understood, and agreed to the current version of the Cookies Policy. If you do not agree with the terms of the updated Cookies Policy, you should adjust your cookie preferences or discontinue using our Services.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                The "Last Updated" date at the beginning of this document indicates when this Cookies Policy was last revised. We recommend checking this date each time you visit to ensure you are aware of any changes.
+            </p>
+        </section>
+
+        <section class="mb-12 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-fiery-red mb-6">8. Contact Us: Your Cookie Inquiries</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                If you have any questions, concerns, or requests regarding this Cookies Policy or our use of cookies, please do not hesitate to contact us. We are committed to addressing your inquiries promptly and transparently.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                You can reach us through the following channels:
+                <ul class="list-disc pl-6 mt-2 text-charcoal-black">
+                    <li>
+                        **Email:** For cookie-specific inquiries or to exercise your cookie-related rights, please email us at: <a href="mailto:cookies@epicspicyeats.com" class="text-flame-orange hover:underline">cookies@epicspicyeats.com</a>
+                    </li>
+                    <li>
+                        **Postal Address:** You may also send written correspondence to our headquarters at:
+                        <address class="not-italic mt-2">
+                            EpicSpicyEats Headquarters<br>
+                            123 Chili Lane, Spice City, FL 90210<br>
+                            USA
+                        </address>
+                    </li>
+                    <li>
+                        **Contact Form:** Visit our <a href="contact.html" class="text-flame-orange hover:underline">Contact Us</a> page on the website to submit your inquiry directly through our online form.
+                    </li>
+                </ul>
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                When contacting us, please provide sufficient details to allow us to understand your request and respond effectively. This may include your name, email address, and a clear description of your inquiry. We may need to verify your identity before fulfilling certain requests to ensure the security of your personal information.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                We aim to respond to all legitimate requests within a reasonable timeframe, typically within 30 days, unless a longer period is required by law. We appreciate your patience and cooperation as we work to protect your privacy.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-black text-creamy-white py-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <h4 class="text-xl font-semibold text-fiery-red mb-2">EpicSpicyEats Headquarters</h4>
+                <p class="text-smoke-gray">123 Chili Lane, Spice City, FL 90210, USA</p>
+                <p class="text-smoke-gray">Email: <a href="mailto:info@epicspicyeats.com" class="hover:text-flame-orange">info@epicspicyeats.com</a></p>
+                <p class="text-smoke-gray">Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="mb-4">
+                <p class="text-sm text-smoke-gray">&copy; 2025 EpicSpicyEats. All rights reserved.</p>
+                <p class="text-sm text-smoke-gray">“Bold Flavors. Fiery Adventures.”</p>
+            </div>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <!-- Placeholder for social media icons -->
+                <a href="#" class="hover:text-flame-orange transition duration-300">🌶️</a>
+                <a href="#" class="hover:text-flame-orange transition duration-300">🔥</a>
+                <a href="#" class="hover:text-flame-orange transition duration-300">🍜</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Dialogue Box -->
+    <div id="cookieConsentBox">
+        <p>This website uses cookies to ensure you get the best experience on our website. By clicking "Accept All", you consent to the use of all cookies. For more details, please see our <a href="cookies.html" class="text-flame-orange hover:underline">Cookies Policy</a>.</p>
+        <button id="acceptCookies">Accept All</button>
+        <button id="declineCookies">Decline Non-Essential</button>
+    </div>
+
+    <script>
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+        }
+
+        // Function to get a cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i=0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Check if cookie consent has been given
+        window.onload = function() {
+            const cookieConsent = getCookie("epicSpicyEatsCookieConsent");
+            const cookieBox = document.getElementById("cookieConsentBox");
+
+            if (!cookieConsent) {
+                // If consent not given, show the box
+                cookieBox.style.display = "block";
+            }
+
+            // Event listeners for consent buttons
+            document.getElementById("acceptCookies").addEventListener("click", function() {
+                setCookie("epicSpicyEatsCookieConsent", "accepted", 365); // Store consent for 1 year
+                cookieBox.style.display = "none";
+                // You might reload the page or trigger other scripts here if necessary
+                // For a real application, this would trigger the loading of analytics/advertising scripts
+            });
+
+            document.getElementById("declineCookies").addEventListener("click", function() {
+                setCookie("epicSpicyEatsCookieConsent", "declined", 365); // Store decline for 1 year
+                cookieBox.style.display = "none";
+                // For a real application, this would prevent the loading of non-essential scripts
+            });
+        };
+    </script>
+</body>
+</html>

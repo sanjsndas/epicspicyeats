@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicSpicyEats — Ignite Your Taste Buds!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA; /* Creamy White */
+            color: #212121; /* Charcoal Black */
+        }
+        .text-fiery-red { color: #D32F2F; }
+        .bg-fiery-red { background-color: #D32F2F; }
+        .text-charcoal-black { color: #212121; }
+        .bg-charcoal-black { background-color: #212121; }
+        .text-flame-orange { color: #FF5722; }
+        .bg-flame-orange { background-color: #FF5722; }
+        .text-smoke-gray { color: #757575; }
+        .bg-smoke-gray { background-color: #757575; }
+        .bg-creamy-white { background-color: #FAFAFA; }
+
+        /* Custom styles for heat meter */
+        .heat-meter {
+            display: flex;
+            gap: 4px;
+        }
+        .heat-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #757575; /* Smoke Gray for unlit */
+        }
+        .heat-dot.active {
+            background-color: #D32F2F; /* Fiery Red for lit */
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+    <!-- Header -->
+    <header class="bg-charcoal-black text-creamy-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-3xl font-bold text-fiery-red mb-4 md:mb-0">
+                EpicSpicyEats
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-white">
+                    <li><a href="index.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="blog.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Blog</a></li>
+                    <li><a href="privacy.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-flame-orange transition duration-300 rounded-md px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96 flex items-center justify-center text-center rounded-b-lg shadow-xl"
+    class="absolute inset-0 bg-charcoal-black opacity-60 rounded-b-lg"></div>
+        <div class="relative z-10 text-creamy-white p-6 md:p-8">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+                Ignite Your Taste Buds!
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light italic">
+                “Where Every Bite Brings the Heat.”
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#recipes" class="bg-fiery-red hover:bg-flame-orange text-creamy-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Explore Fiery Recipes
+                </a>
+                <a href="#challenges" class="bg-flame-orange hover:bg-fiery-red text-creamy-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Join Spice Challenges
+                </a>
+                <a href="#shop" class="bg-smoke-gray hover:bg-charcoal-black text-creamy-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Shop Spice Kits
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- Introduction to EpicSpicyEats -->
+        <section class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-6 text-center">Welcome to EpicSpicyEats!</h2>
+            <p class="text-lg text-charcoal-black leading-relaxed mb-4">
+                At EpicSpicyEats, we celebrate bold, spicy, and adventurous flavors from global cuisines. Our platform is for lovers of heat, from mild warming spices to blazing hot chili dishes. We offer recipes, tips, and a vibrant community to ignite your culinary journey.
+            </p>
+            <p class="text-lg text-charcoal-black leading-relaxed">
+                Explore fiery recipes from Asia, Latin America, Africa, and beyond. Discover sizzling street food, intense sauces, and learn to balance heat with flavor. Join our community challenges and share your own fiery adventures. Get ready to turn up the heat and taste the epic!
+            </p>
+        </section>
+
+        <!-- Recipe Collections -->
+        <section id="recipes" class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-10 text-center">Explore Fiery Recipes</h2>
+            <p class="text-lg text-charcoal-black mb-8 text-center">
+                Dive into our curated collection of spicy recipes, each designed to tantalize your taste buds. From mild to wild, we have something for every spice adventurer. Each recipe comes with a "Heat Meter" to guide your culinary journey.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Recipe 1: Sichuan Dan Dan Noodles -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p1.webp" alt="Sichuan Dan Dan Noodles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Sichuan Dan Dan Noodles</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A quintessential Sichuan dish, known for its "mala" (numbing and spicy) flavor. Thin wheat noodles are tossed in a rich, savory, and spicy sauce with ground pork, preserved vegetables, and Sichuan peppercorns. A complex and addictive dish for nuanced spice lovers.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 2: Thai Green Curry with Chicken -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p2.webp" alt="Thai Green Curry with Chicken" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Thai Green Curry with Chicken</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A vibrant and aromatic Thai dish with a harmonious blend of sweet, sour, salty, and spicy. Features chicken, bamboo shoots, and Thai eggplant simmered in rich coconut milk with a fresh green chili curry paste.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 3: Mexican Chili Con Carne -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p3.webp" alt="Mexican Chili Con Carne" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Mexican Chili Con Carne</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A hearty and robust stew with tender beef, slow-simmered in a rich sauce made from rehydrated dried chilies like ancho and guajillo. Customizable heat, often served with cheese, sour cream, or cornbread.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 4: Indian Chicken Vindaloo -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p4.webp" alt="Indian Chicken Vindaloo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Indian Chicken Vindaloo</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A legendary Goan curry, intensely spicy and tangy, featuring chicken marinated in a potent blend of red chilies, garlic, ginger, and vinegar. Celebrated for its robust heat and complex flavor profile.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 5: Korean Kimchi Jjigae -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p5.webp" alt="Korean Kimchi Jjigae" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Korean Kimchi Jjigae</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A quintessential Korean comfort food: a bubbling, savory, and spicy stew. Made with aged kimchi, pork (or tofu), and seasoned with gochujang and gochugaru for a comforting warmth.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 6: Ethiopian Doro Wat -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p6.webp" alt="Ethiopian Doro Wat" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Ethiopian Doro Wat</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            Ethiopia's national dish: a rich, intensely flavorful chicken stew. Its deep red color and spicy profile come from 'berbere' spice blend and slow-cooked red onions. Traditionally served with injera.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 7: Jamaican Jerk Chicken -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p7.webp" alt="Jamaican Jerk Chicken" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Jamaican Jerk Chicken</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            An iconic Jamaican dish featuring chicken marinated in a potent blend of Scotch bonnet peppers, allspice, and other aromatics. Slow-cooked for smoky, spicy, and tender results.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 8: West African Peanut Stew (Mafe) -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p8.webp" alt="West African Peanut Stew" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">West African Peanut Stew (Mafe)</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                                <div class="heat-dot"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A rich, comforting, and flavorful stew popular across West Africa. Combines the savory richness of peanuts with vegetables and often meat, spiced with local chilies.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 9: Vietnamese Spicy Beef Noodle Soup (Bun Bo Hue) -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p9.webp" alt="Vietnamese Spicy Beef Noodle Soup" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Vietnamese Spicy Beef Noodle Soup (Bun Bo Hue)</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A culinary masterpiece from Huế, Vietnam, known for its bold, complex, and intensely spicy broth. Features thick rice noodles, beef shank, pork hock, and a special chili oil.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Recipe 10: Nashville Hot Chicken -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="p10.webp" alt="Nashville Hot Chicken" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-charcoal-black mb-3">Nashville Hot Chicken</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-medium mr-2">Heat Level:</span>
+                            <div class="heat-meter">
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                                <div class="heat-dot active"></div>
+                            </div>
+                        </div>
+                        <p class="text-smoke-gray text-base leading-relaxed">
+                            A culinary phenomenon from Nashville, Tennessee: crispy fried chicken coated in a fiery, cayenne-pepper-infused sauce. Promises intense, lingering heat balanced by savory and sweet notes.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Spice Kit Shop -->
+        <section id="shop" class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">Spice Kit Shop: Elevate Your Heat!</h2>
+            <p class="text-lg text-charcoal-black mb-6 text-center">
+                Elevate your spicy culinary adventures with our curated Spice Kits. Featuring the finest chili powders, artisanal sauces, and expertly blended spice mixes from around the globe. Quality, authenticity, and heat in every kit.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Global Heat Explorer Kit</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Explore diverse heat profiles with premium chili powders like Kashmiri Lal Mirch (India), Gochugaru (Korea), and Ancho Chili Powder (Mexico). Perfect for experimenting with international flavors.
+                    </p>
+                    <button class="bg-flame-orange hover:bg-fiery-red text-creamy-white font-bold py-2 px-4 rounded-full transition duration-300">Shop Now</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Artisan Hot Sauce Collection</h3>
+                    <p class="text-smoke-gray mb-4">
+                        A collection of small-batch, handcrafted sauces, from smoky Chipotle to blazing Habanero-Mango. Perfect for drizzling, marinating, or adding a kick to any meal.
+                    </p>
+                    <button class="bg-flame-orange hover:bg-fiery-red text-creamy-white font-bold py-2 px-4 rounded-full transition duration-300">Shop Now</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Ultimate Spice Blend Master Kit</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Unlock complex flavors with essential blends like Berbere (Ethiopia), Garam Masala (India), and Jerk Seasoning (Jamaica). Crafted for authentic taste and balanced heat.
+                    </p>
+                    <button class="bg-flame-orange hover:bg-fiery-red text-creamy-white font-bold py-2 px-4 rounded-full transition duration-300">Shop Now</button>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black mt-8 text-center">
+                We source only the highest quality ingredients, partnering with ethical suppliers. Our kits offer convenience, quality, and inspiration for all chefs.
+            </p>
+        </section>
+
+        <!-- Cooking Tips & Heat Balancing Guides -->
+        <section class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">Cooking Tips & Heat Balancing Guides</h2>
+            <p class="text-lg text-charcoal-black mb-6 text-center">
+                Master the art of spicy cooking by balancing heat with flavor. Our guides help you navigate capsaicin nuances and enhance aromatic profiles.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Understanding the Scoville Scale</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Learn about the Scoville Heat Unit (SHU) scale, measuring capsaicin concentration in chilies. Choose the right chili for your desired heat level and understand individual tolerance.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Techniques for Taming the Flame</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Reduce spiciness without sacrificing flavor. Use dairy, acidity, or sweetness to neutralize capsaicin. Learn to dilute heat with starchy ingredients.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Building Flavor Beyond Heat</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Create complex flavor profiles where heat enhances, not overpowers. Layer flavors using aromatics, herbs, and spices. Learn about blooming chili powders and building robust bases.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Pairing Drinks with Spicy Food</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Elevate your meal with the right beverage. Discover drinks that complement different heat levels, from cooling dairy to acidic options.
+                    </p>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black mt-8 text-center">
+                Our guides are updated with new insights, empowering you to cook with confidence and creativity.
+            </p>
+        </section>
+
+        <!-- User-Submitted Spicy Recipe Challenges -->
+        <section id="challenges" class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">Spice Challenges: Are You Brave Enough?</h2>
+            <p class="text-lg text-charcoal-black mb-6 text-center">
+                Test your limits and creativity with our community-driven Spice Challenges. Submit your most innovative and fiery recipes each month.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">How It Works</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Submit your unique recipe based on our monthly theme. Submissions are reviewed by experts and community votes. Winners get bragging rights and features on our site.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Past Challenges & Hall of Flame</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Explore our "Hall of Flame" to see past winners and their incredible creations. Get inspired by these legendary dishes and plan your next entry!
+                    </p>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black mt-8 text-center">
+                Join the EpicSpicyEats community and prove your mettle. Check our blog for the latest challenge announcements!
+            </p>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">From Our Blog: Spicy Food Culture & Stories</h2>
+            <p class="text-lg text-charcoal-black mb-6 text-center">
+                Our blog is your source for everything spicy: chili pepper history, interviews, and cultural stories. Dive into the rich tapestry of spicy food.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">The Global Journey of the Chili Pepper</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Trace the chili pepper's incredible journey from the Americas to its global influence on cuisines worldwide.
+                    </p>
+                    <a href="blog.html#chili-journey" class="text-flame-orange hover:underline">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Interview with a Chili Farmer</h3>
+                    <p class="text-smoke-gray mb-4">
+                        An exclusive look into the life of a dedicated chili farmer, their challenges, and passion for quality chilies.
+                    </p>
+                    <a href="blog.html#farmer-interview" class="text-flame-orange hover:underline">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Beyond the Burn: Health Benefits of Spicy Food</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Explore the surprising health benefits of spicy foods, from metabolism boosting to pain relief and anti-inflammatory properties.
+                    </p>
+                    <a href="blog.html#health-benefits" class="text-flame-orange hover:underline">Read More &rarr;</a>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black mt-8 text-center">
+                Our blog is a dynamic space for all forms of spicy food. Stay tuned for updates and join the conversation!
+            </p>
+        </section>
+
+        <!-- Interactive Features (Conceptual) -->
+        <section class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">Interactive Features: Enhancing Your Spicy Journey</h2>
+            <p class="text-lg text-charcoal-black mb-6 text-center">
+                EpicSpicyEats is an interactive community hub. While these features are conceptual, imagine the possibilities!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Personalized Heat Meter on Recipes</h3>
+                    <p class="text-smoke-gray mb-4">
+                        A dynamic Heat Meter that adapts to your preferences, offering tailored recommendations and allowing you to adjust heat levels.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Spice Challenge Tracker & Leaderboards</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Monitor your progress in challenges, view real-time leaderboards, and see other submissions. Earn badges and climb the ranks!
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Community Forum for Spice Tips & Stories</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Connect with fellow enthusiasts, share tips, stories, and get advice from seasoned chili lovers. A vibrant hub for shared knowledge.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-charcoal-black mb-3">Personalized Recipe Recommendations</h3>
+                    <p class="text-smoke-gray mb-4">
+                        Intelligent suggestions based on your history and preferences. Discover new recipes that match your palate or push your adventurous side.
+                    </p>
+                </div>
+            </div>
+            <p class="text-lg text-charcoal-black mt-8 text-center">
+                These features aim to make your EpicSpicyEats experience engaging, personalized, and connected to a global community.
+            </p>
+        </section>
+
+        <!-- Customer Satisfaction -->
+        <section class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">Customer Satisfaction: Our Fiery Commitment to You</h2>
+            <p class="text-lg text-charcoal-black mb-6 text-center">
+                Your satisfaction drives EpicSpicyEats. We're committed to an unparalleled culinary experience, from recipe quality to community vibrancy.
+            </p>
+            <p class="text-lg text-charcoal-black">
+                Our team meticulously tests recipes and sources quality ingredients. We foster a welcoming community and value your feedback for continuous improvement. We're here to support your fiery adventures every step of the way.
+            </p>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="mb-16 p-8 bg-creamy-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-fiery-red mb-8 text-center">Disclaimer</h2>
+            <p class="text-base text-smoke-gray leading-relaxed">
+                Information on EpicSpicyEats is for general informational and entertainment purposes only. It is not professional advice. Consult a healthcare professional for health concerns or dietary changes. Recipes are based on general practices; individual results may vary. Heat levels are subjective.
+            </p>
+            <p class="text-base text-smoke-gray leading-relaxed mt-4">
+                We are not responsible for adverse reactions or allergies. Users must identify and avoid sensitive ingredients. Handle extremely hot chilies with gloves and wash hands thoroughly.
+            </p>
+            <p class="text-base text-smoke-gray leading-relaxed mt-4">
+                Spice Kit Shop information is for products not manufactured by us; purchases are subject to vendor terms. Review product details carefully.
+            </p>
+            <p class="text-base text-smoke-gray leading-relaxed mt-4">
+                Blog content reflects opinions and research at publication time; accuracy is not guaranteed. External links are for convenience; we are not responsible for third-party sites.
+            </p>
+            <p class="text-base text-smoke-gray leading-relaxed mt-4">
+                Participation in challenges is at your own risk. Prioritize health and well-being. By using this website, you agree to this disclaimer. Enjoy your fiery culinary journey responsibly and safely!
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-black text-creamy-white py-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <h4 class="text-xl font-semibold text-fiery-red mb-2">EpicSpicyEats Headquarters</h4>
+                <p class="text-smoke-gray">123 Chili Lane, Spice City, FL 90210, USA</p>
+                <p class="text-smoke-gray">Email: <a href="mailto:info@epicspicyeats.com" class="hover:text-flame-orange">info@epicspicyeats.com</a></p>
+                <p class="text-smoke-gray">Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="mb-4">
+                <p class="text-sm text-smoke-gray">&copy; 2025 EpicSpicyEats. All rights reserved.</p>
+                <p class="text-sm text-smoke-gray">“Bold Flavors. Fiery Adventures.”</p>
+            </div>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <!-- Placeholder for social media icons -->
+                <a href="#" class="hover:text-flame-orange transition duration-300">🌶️</a>
+                <a href="#" class="hover:text-flame-orange transition duration-300">🔥</a>
+                <a href="#" class="hover:text-flame-orange transition duration-300">🍜</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
